@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://i.ibb.co/NFRhL44/img.jpg'); /*caminho da imagem*/
+    background-size: cover; /*ocupar a largura total do item*/
+    background-repeat: no-repeat; /*evita da imagem ficar repetindo*/
+    background-position: center; /*joga a imagem no centro da tela*/
+    z-index: 0; /*camada zero do projeto, peritindo que outros itens fiquem sobre ele */
+    min-height: 100vh;
+    color: white;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerMain{
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+    border: 1px solid #96529B;
+    z-index: 1; /*permite que o item fique por cima do body*/
+    position: absolute; /*precisão em seu alinhamento de acordo com os itens mais proximos*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*alinha os itens verticalmente e horizontalmente*/
+    background-color: #332562;
+    box-shadow: 2px 2px 12px #96529B;
+    filter: opacity(0.8);
+}
+
+.containerHourDate{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hour{
+    display: flex;
+    gap: 4px;
+}
